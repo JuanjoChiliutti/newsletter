@@ -52,7 +52,7 @@ export default function Principal (props) {
           </div>
         </div>
         <div className='contenedor-imagen'>
-          
+          <br />
         </div>
         
     </div>
