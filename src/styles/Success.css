@@ -53,3 +53,14 @@
     border: none;
     
 }
+
+.btn-dismiss:hover {
+    transition: 1s;
+    background: linear-gradient(to right,rgb(255, 0, 93) , rgb(225, 88, 8)  );
+    background-color: rgb(225, 88, 8);
+    box-shadow: 5px 5px 8px rgba(227, 76, 6, 0.4);
+}
+
+.email-input {
+    font-family: 'Roboto-Bold';
+}

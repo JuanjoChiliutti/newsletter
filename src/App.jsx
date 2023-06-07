@@ -1,6 +1,6 @@
 
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Principal from './components/Principal';
 import Success from './components/Success';
@@ -9,14 +9,15 @@ import Success from './components/Success';
 function App() {
   const [isSent, setIsSent] = useState(false)
   const [mail, setMail] = useState('');
-
+  const [dismiss, setDismiss]= useState(false)
+  
   
   
   return (
-    <> {!isSent?       
+    <> {!isSent || dismiss ?       
       <Principal isSent={isSent} setIsSent={setIsSent} setMail={setMail} />
       :
-      <Success mail={mail}/>
+      <Success mail={mail} setDismiss={setDismiss}/>
     }
     </>
   )

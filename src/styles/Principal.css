@@ -2,130 +2,163 @@
 @font-face {
     font-family: 'Roboto-Bold';
     src: url(../../assets/fonts/Roboto-Bold.ttf) format('truetype');
-  }
-  @font-face {
-    font-family: 'Roboto-Regular';
-    src: url(../../assets/fonts/Roboto-Regular.ttf) format('truetype');
-  }
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(../../assets/fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+#root {
+  width: 100vw;
+  height:100vh;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 41, 62);
+  font-family: 'Roboto-Regular';
+}
+
+.contenedor-principal {  
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  width: 50em;
+  height: 35em;
+  border-radius: 2em;
+  background-color: rgb(255,255,255);
   
-  #root {
-    width: 100vw;
-    height:100vh;
-    margin: 0 auto;
-    text-align: center;
+}
+
+.contenedor-texto {
+  margin-top: 2em;
+  width: 50%;
+  padding: 1em 1em 2em 2em;
+}
+
+
+.input-email {
+  padding-left: 2em;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-imagen {
+height: 100%;
+width: 50%;
+background-image: url('../assets/images/illustration-sign-up-desktop.svg');
+background-size: cover;
+background-position: center center;
+
+}
+
+
+
+h1 {
+  font-family: 'Roboto-Bold';
+}
+
+.btn-susc {
+  margin-top: 1em;
+  font-family: 'Roboto-Regular';
+  font-size: 0.8em;
+  height: 3em;
+  background-color: rgb(43, 41, 62);
+  color: rgb(255,255,255);
+  border: none;
+
+}
+
+.join {
+  padding-left: 2em;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.label-valid {
+  font-family: 'Roboto-Bold';
+  text-align: left;
+  font-size: 0.7em;
+  font-weight: 800;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  margin: 0.5em 0em;
+  height: 3em;
+  border-radius: 0.5em;
+  padding-left: 1em;
+  font-size: 0.9em;
+  font-weight: 900;
+  font-family: 'Roboto-Regular';
+  border: 1px solid rgb(186, 185, 192);
+  outline: none;
+}
+
+ul {
+  align-items: center;
+  list-style-type: none;
+}
+ul li {
+  
+  list-style-image: url('../assets/images/icon-list.svg');
+  padding-left: 0.5em;
+  padding-bottom: 0.4em;
+}
+.lista {
+  text-align: left;
+  padding-left: 4em;
+  font-size: 0.9em;
+}
+
+.alert {
+  color: rgb(237, 83, 7);
+  
+}
+.input-alert {
+  border: 1px solid rgb(237, 83, 7);
+  background-color: rgb(239, 205, 188);
+}
+
+.btn-susc:hover {
+  transition: 1s;
+  background: linear-gradient(to right,rgb(255, 0, 93) , rgb(225, 88, 8)  );
+  background-color: rgb(225, 88, 8);
+  box-shadow: 5px 5px 8px rgba(227, 76, 6, 0.4);
+}
+
+/* Estilos para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 767px) {
+  .contenedor-principal {
     display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    border-radius: 0;
     justify-content: center;
     align-items: center;
-    background-color: rgb(43, 41, 62);
-    font-family: 'Roboto-Regular';
-  }
-  
-  .contenedor-principal {  
-    margin: 0;
-    display: flex;
-    width: 50em;
-    height: 35em;
-    border-radius: 2em;
-    background-color: rgb(255,255,255);
     
   }
-  
-.contenedor-texto {
-    margin-top: 2em;
-    width: 50%;
-    padding: 1em 1em 2em 2em;
-  }
-  
-  
-  .input-email {
-    padding-left: 2em;
-    margin-top: 2em;
-    display: flex;
-    flex-direction: column;
+  .contenedor-texto {
+   
+    width: 100%;
+    padding: 0em 1em 0em 1em;
   }
   
   .contenedor-imagen {
-  height: 90%;
-  width: 50%;
-  padding: 1em;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  background-size: cover;
+  margin:0;
   }
-  
-  img {
-    height: 100%;
-    width: 100%;
-  }
-  
-  h1 {
-    font-family: 'Roboto-Bold';
-  }
-  
-  .btn-susc {
-    margin-top: 1em;
-    font-family: 'Roboto-Regular';
-    font-size: 0.8em;
-    height: 3em;
-    background-color: rgb(43, 41, 62);
-    color: rgb(255,255,255);
-    border: none;
-  
-  }
-  
-  .join {
-    padding-left: 2em;
-    text-align: left;
-    font-size: 0.9em;
-  }
-  
-  .label-valid {
-    font-family: 'Roboto-Bold';
-    text-align: left;
-    font-size: 0.7em;
-    font-weight: 800;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  input {
-    margin: 0.5em 0em;
-    height: 3em;
-    border-radius: 0.5em;
-    padding-left: 1em;
-    font-size: 0.9em;
-    font-weight: 900;
-    font-family: 'Roboto-Regular';
-    border: 1px solid rgb(186, 185, 192);
-    outline: none;
-  }
-  
-  ul {
-    align-items: center;
-    list-style-type: none;
-  }
-  ul li {
-    
-    list-style-image: url('../assets/images/icon-list.svg');
-    padding-left: 0.5em;
-    padding-bottom: 0.4em;
-  }
-  .lista {
-    text-align: left;
-    padding-left: 4em;
-    font-size: 0.9em;
-  }
-  
-  .alert {
-    color: rgb(237, 83, 7);
-    
-  }
-  .input-alert {
-    border: 1px solid rgb(237, 83, 7);
-    background-color: rgb(239, 205, 188);
-  }
-  
-  .btn-susc:hover {
-    transition: 1s;
-    background: linear-gradient(to right,rgb(255, 0, 93) , rgb(225, 88, 8)  );
-    background-color: rgb(225, 88, 8);
-    box-shadow: 5px 5px 8px rgba(227, 76, 6, 0.4);
-    }
+
+
+  /* Otros estilos específicos para dispositivos móviles */
+}

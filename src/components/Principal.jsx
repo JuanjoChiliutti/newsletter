@@ -52,7 +52,7 @@ export default function Principal (props) {
           </div>
         </div>
         <div className='contenedor-imagen'>
-          <img src='../assets/images/illustration-sign-up-desktop.svg' alt="" />
+          
         </div>
         
     </div>
