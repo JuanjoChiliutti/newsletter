@@ -26,7 +26,7 @@ export default function Principal (props) {
   return (
     <div className='contenedor-principal'>
         <div className='contenedor-texto'>
-          <div className='title'><h1>Stay updated!</h1></div>
+          <div className='title'><p className='title'>Stay updated!</p></div>
           <div className='text'>
             <p className='join'>
               Join 60,000+ product managers receiving monthly updates on:

@@ -24,43 +24,46 @@
   margin: 0;
   padding: 1em;
   display: flex;
-  width: 50em;
-  height: 35em;
+  width: 45em;
+  height: 30em;
   border-radius: 2em;
   background-color: rgb(255,255,255);
   
 }
 
 .contenedor-texto {
-  margin-top: 2em;
   width: 50%;
-  padding: 1em 1em 2em 2em;
+  padding-left: 1em;
 }
 
 
 .input-email {
-  padding-left: 2em;
+  padding-left:1em ;
   margin-top: 2em;
   display: flex;
   flex-direction: column;
 }
 
 .contenedor-imagen {
-height: 100%;
-width: 50%;
-background-image: url('../assets/images/illustration-sign-up-desktop.svg');
-background-size: cover;
-background-position: center center;
-
+  width: 50%;
+  background-image: url('../assets/images/illustration-sign-up-desktop.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
 
-h1 {
+.title {
   font-family: 'Roboto-Bold';
+  line-height: 1em;
+  font-size: 1.7em;
+  text-align: left;
+  padding-left: 0.2em;
 }
 
 .btn-susc {
+  width: 25em;
   margin-top: 1em;
   font-family: 'Roboto-Regular';
   font-size: 0.8em;
@@ -72,26 +75,29 @@ h1 {
 }
 
 .join {
-  padding-left: 2em;
+  width: 80%;
+  padding: 0em 1em;
   text-align: left;
   font-size: 0.9em;
 }
 
 .label-valid {
+  
   font-family: 'Roboto-Bold';
   text-align: left;
   font-size: 0.7em;
   font-weight: 800;
-  width: 100%;
+  width: 28em;
   display: flex;
   justify-content: space-between;
 }
 
 input {
+  width: 20em;
+  padding: 0em 1em;
   margin: 0.5em 0em;
   height: 3em;
   border-radius: 0.5em;
-  padding-left: 1em;
   font-size: 0.9em;
   font-weight: 900;
   font-family: 'Roboto-Regular';
@@ -106,12 +112,10 @@ ul {
 ul li {
   
   list-style-image: url('../assets/images/icon-list.svg');
-  padding-left: 0.5em;
-  padding-bottom: 0.4em;
+  
 }
 .lista {
   text-align: left;
-  padding-left: 4em;
   font-size: 0.9em;
 }
 
@@ -134,28 +138,27 @@ ul li {
 /* Estilos para pantallas más pequeñas, como dispositivos móviles */
 @media (max-width: 767px) {
   .contenedor-principal {
+    padding: 0;
+  
     display: flex;
     flex-direction: column-reverse;
     height: 100vh;
     width: 100vw;
-    padding: 0;
     border-radius: 0;
     justify-content: center;
     align-items: center;
     
   }
   .contenedor-texto {
-   
+    padding-left: 5em;
+    justify-content: center;
     width: 100%;
-    padding: 0em 1em 0em 1em;
   }
   
   .contenedor-imagen {
-  height: 50%;
+  height: 40%;
   width: 100%;
-  display: flex;
-  align-items: flex-start;
-  background-size: cover;
+  background-size: 100%;
   margin:0;
   }
 
